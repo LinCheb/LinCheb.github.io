@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Linda Chebli — Administratrice Systèmes & Réseaux</title>
+<meta name="description" content="Portfolio de Linda Chebli, administratrice systèmes & réseaux en formation. 7 ans face aux DSI et RSSI. Recherche un stage de 6 mois à partir de mai 2027." />
+
+<!-- ✨ NOUVEAU : aperçu quand on partage le lien sur LinkedIn / WhatsApp / Slack.
+     Le fichier apercu-linkedin.png doit être déposé à côté de index.html. -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lincheb.github.io/" />
+<meta property="og:title" content="Linda Chebli — Administratrice Systèmes & Réseaux" />
+<meta property="og:description" content="J'apprends à faire tourner l'infra. Labs documentés et expliqués en clair." />
+<meta property="og:image" content="https://lincheb.github.io/apercu-linkedin.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<!-- ✨ NOUVEAU : petite icône dans l'onglet du navigateur -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231d1b18'/><text x='50' y='66' font-family='monospace' font-size='46' font-weight='700' fill='%23d9c29b' text-anchor='middle'>LC</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<!-- Toute la mise en forme est dans style.css (à garder dans le même dossier) -->
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="bg-photo" aria-hidden="true"></div>
+<canvas id="net"></canvas>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">linda<span>@infra:~$</span></a>
+    <div class="links">
+      <a href="#parcours">Parcours</a>
+      <a href="#labs">Labs</a>
+      <a href="#competences">Compétences</a>
+      <a href="#journal">Journal</a>
+      <a href="#formation">Formation</a>
+    </div>
+    <a href="#contact" class="btn btn-sm">Me recruter en stage</a>
+  </div>
+</nav>
+
+<header class="wrap hero">
+  <div class="reveal">
+    <div class="who">
+      <!-- ✨ NOUVEAU : dépose ta photo sous le nom photo-linda.jpg (carrée, en situation de préférence). -->
+      <img class="avatar" src="photo-linda.jpg" alt="Linda Chebli"
+           onerror="this.outerHTML='<div class=&quot;avatar&quot; aria-label=&quot;Linda Chebli&quot;>LC</div>'" />
+      <div class="status"><span class="dot"></span>Disponible · stage 6 mois · à partir de mai 2027</div>
+    </div>
+    <!-- ✨ MODIFIÉ : promesse honnête pour un profil en formation -->
+    <h1>J'apprends à faire tourner <em>l'infra.</em></h1>
+    <p class="lead">
+      Après 15 ans dans la vente B2C et B2B, dont 7 ans face aux DSI et aux RSSI, je me forme au métier d'<b>administratrice systèmes & réseaux</b>.
+      Chaque lab est documenté et <b>expliqué en clair</b>.
+    </p>
+    <div class="cta-row">
+      <a href="#contact" class="btn">📩 Me proposer un stage</a>
+      <a href="#labs" class="btn btn-soft">Voir mes labs →</a>
+    </div>
+  </div>
+
+  <div class="term reveal" aria-label="Terminal de présentation">
+    <div class="term-bar"><i></i><i></i><i></i><small>linda@infra: ~</small></div>
+    <div class="term-body" id="term"></div>
+  </div>
+</header>
+
+<!-- PARCOURS -->
+<section id="parcours">
+  <div class="wrap">
+    <p class="tag">// 01 — parcours</p>
+    <h2>Je suis passée de l'autre côté de la table</h2>
+    <p class="sub">Pendant 7 ans, j'ai vendu des solutions numériques SaaS et API à des directions générales, des DSI et des RSSI. Aujourd'hui, je développe <b>l'aspect technique</b> de mon profil : j'apprends à configurer et à maintenir en condition opérationnelle une infrastructure systèmes & réseaux.</p>
+
+    <div class="bridge reveal">
+      <div class="side">
+        <small>7 ans</small>
+        <h3>💼 Account Manager B2B</h3>
+        <ul>
+          <li>Solutions SaaS & API : archivage et signature électroniques, coffre-fort numérique, cybersécurité</li>
+          <li>Une trentaine de comptes : banque, assurance, retail</li>
+          <li>Réponses aux questionnaires sécurité des RSSI</li>
+          <li>Coordination d'intégrations API avec les DSI</li>
+        </ul>
+      </div>
+      <div class="arrow">⟶</div>
+      <div class="side now">
+        <small>2026 → aujourd'hui</small>
+        <h3>🖥️ Administratrice Systèmes & Réseaux</h3>
+        <ul>
+          <li>Formation intensive ASR chez DesCodeuses</li>
+          <li>Réseau, Windows Server, Linux, virtualisation</li>
+          <li>Un lab documenté pour chaque notion apprise</li>
+          <li>La sécurité et le risque comme fil rouge</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="plus reveal">
+      <div><b>🤝 Côté client</b><p>7 ans au contact des DSI et des RSSI : intégrations API, POC, questionnaires sécurité.</p></div>
+      <div><b>📝 Côté méthode</b><p>Étapes, pannes et corrections notées à chaque lab.</p></div>
+      <div><b>🔐 Côté sécurité</b><p>Une leçon sécu à la fin de chaque lab.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LABS -->
+<section id="labs">
+  <div class="wrap">
+    <p class="tag">// 02 — labs</p>
+    <h2>Leçon tirée</h2>
+    <p class="sub">Méthode : objectif → schéma → étapes → vérification → pannes rencontrées → <b>leçon sécu</b>. Plus un encadré <b>« En clair »</b> : le lab expliqué simplement.</p>
+    <div class="grid" id="labs-grid"></div>
+      </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="competences">
+  <div class="wrap">
+    <p class="tag">// 03 — compétences</p>
+    <h2>Où j'en suis</h2>
+    <div class="skills">
+      <div class="sk reveal">
+        <h3>🌐 Réseau</h3>
+        <div class="bar"><div class="bar-l"><span>Adressage IPv4 & subnetting</span><span>pratiqué</span></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+        <div class="bar"><div class="bar-l"><span>DHCP / DNS</span><span>pratiqué</span></div><div class="track"><div class="fill" data-w="60"></div></div></div>
+        <div class="bar"><div class="bar-l"><span>VLAN & switching</span><span>en cours</span></div><div class="track"><div class="fill" data-w="45"></div></div></div>
+      </div>
+      <div class="sk reveal">
+        <h3>🖥️ Systèmes</h3>
+        <div class="bar"><div class="bar-l"><span>Linux (installation, CLI)</span><span>pratiqué</span></div><div class="track"><div class="fill" data-w="50"></div></div></div>
+        <div class="bar"><div class="bar-l"><span>Windows Server / AD</span><span>à venir</span></div><div class="track"><div class="fill" data-w="15"></div></div></div>
+        <div class="bar"><div class="bar-l"><span>Virtualisation</span><span>à venir</span></div><div class="track"><div class="fill" data-w="15"></div></div></div>
+      </div>
+      <div class="sk reveal">
+        <h3>🔐 Sécurité & méthode</h3>
+        <div class="bar"><div class="bar-l"><span>Fondamentaux cyber</span><span>certifié</span></div><div class="track"><div class="fill" data-w="65"></div></div></div>
+        <div class="bar"><div class="bar-l"><span>Analyse de risque (EBIOS RM)</span><span>initiation</span></div><div class="track"><div class="fill" data-w="30"></div></div></div>
+        <div class="bar"><div class="bar-l"><span>Documentation & communication</span><span>solide</span></div><div class="track"><div class="fill" data-w="90"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✨ NOUVEAU : JOURNAL -->
+<section id="journal">
+  <div class="wrap">
+    <p class="tag">// 04 — journal</p>
+    <h2>Ce que j'ai appris</h2>
+    <div class="journal" id="journal-grid"></div>
+  </div>
+</section>
+
+<!-- ✨ NOUVEAU : RECOMMANDATIONS (invisible tant que la liste est vide) -->
+<section id="recos" hidden>
+  <div class="wrap">
+    <p class="tag">// ils m'ont vue travailler</p>
+    <h2>Recommandations</h2>
+    <div class="quotes" id="quotes"></div>
+  </div>
+</section>
+
+<!-- FORMATION -->
+<section id="formation">
+  <div class="wrap">
+    <p class="tag">// 05 — formation</p>
+    <h2>Formations & certifications</h2>
+    <div class="tl reveal">
+      <div class="tl-i future"><span class="tl-d">à partir de mai 2027</span><h3>🎯 Stage en administration systèmes & réseaux</h3><p>MCO, Windows/Linux, Active Directory, réseau, supervision, virtualisation, sauvegarde.</p></div>
+      <div class="tl-i"><span class="tl-d">oct. 2026 → avr. 2027</span><h3>Administratrice Systèmes & Réseaux — DesCodeuses</h3><p>Formation intensive de 6 mois, suivie de 6 mois de stage.</p></div>
+      <div class="tl-i"><span class="tl-d">juillet 2026</span><h3>Google Cybersecurity Professional Certificate</h3><p>Fondamentaux de la cybersécurité, réseau, Linux, SQL, SIEM.</p><span id="credly-link"></span></div>
+      <div class="tl-i"><span class="tl-d">avril 2026</span><h3>Introduction à EBIOS Risk Manager — Club EBIOS / ANSSI</h3><p>MOOC d'initiation à la méthode française d'analyse de risque. <a href="#labs">→ appliqué à mon lab ACL</a></p></div>
+      <div class="tl-i"><span class="tl-d">2013</span><h3>Master Développement commercial — ICD Business School</h3><p>15 ans d'expérience commerciale, dont 7 ans en Account Manager B2B.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact on-card reveal">
+      <p class="tag">// 06 — contact</p>
+      <h2>Vous cherchez une stagiaire qui parle aussi bien aux serveurs qu'à la direction ?</h2>
+      <p class="sub">Je cherche un stage de 6 mois dans une équipe systèmes & réseaux. Parlons-en.</p>
+      <div class="facts">
+        <span class="fact">📅 à partir de mai 2027</span>
+        <span class="fact">📍 Île-de-France</span>
+        <span class="fact">📄 Stage conventionné</span>
+      </div>
+      <div class="cta-row">
+        <a href="https://www.linkedin.com/in/linda-chebli" target="_blank" rel="noopener" class="btn">💼 LinkedIn</a>
+        <a href="mailto:linda.chebli8@icloud.com?subject=Proposition%20de%20stage%20ASR" class="btn">✉️ M'écrire</a>
+        <a href="cv-linda-chebli.pdf" target="_blank" class="btn">📄 Mon CV</a>
+      </div>
+      <div class="profiles" id="profiles"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Merci de votre visite · <a href="https://github.com/LinCheb">GitHub</a></div>
+</footer>
+
+<a href="#contact" class="btn float" id="float">📩 Me proposer un stage</a>
+
+<script>
+/* =====================================================================
+   ✏️  ZONE À MODIFIER — tout le contenu « qui bouge » est ici.
+   Pour ajouter un élément : copier un bloc { ... }, le coller, le modifier.
+   Un champ laissé vide ('') n'est simplement pas affiché.
+   ===================================================================== */
+
+/* ---------- 1. LABS ----------
+   statut : 'valide' (vert) · 'en-cours' (orange) · 'a-venir' (carte en pointillés « prochain lab »)
+   image  : capture ou schéma (adresse web ou fichier à côté de index.html) · secours : image de remplacement
+   enclair: l'encadré EN CLAIR — 2 phrases, zéro jargon, ce que ça change pour l'entreprise
+   risque : l'ANALYSE DE RISQUE — { menace, parade, reste } ('' ou absent = pas affiché)
+   secu   : la LEÇON SÉCU                                                              */
+const PROJETS = [
+  {
+    icone: '🔌',
+    titre: 'VLAN & routage inter-VLAN',
+    statut: 'valide',
+    lien: 'https://github.com/LinCheb/Lab-cisco-vlan',
+    image: 'schema-vlan.png',   // fichier fourni, à déposer à côté de index.html
+    secours: 'https://raw.githubusercontent.com/LinCheb/Lab-cisco-vlan/main/v1-vlan-routage/captures/topologie.png',
+    description: "Réseau d'entreprise segmenté en 5 VLAN (client, direction, supervision, serveurs, IT), routage inter-VLAN en router-on-a-stick, administration en SSH v2, routage statique vers l'extérieur. 2 pannes diagnostiquées et documentées.",
+    enclair: "Le réseau est découpé en zones, comme les étages d'un immeuble. Pour l'instant, les portes entre étages sont encore ouvertes : les fermer, c'est l'étape suivante (v2).",
+    secu: "Un VLAN isole, mais ne protège pas tout seul : sans ACL, le routeur laisse tout passer.",
+    tags: ['Cisco Packet Tracer', '802.1Q', 'Router-on-a-stick', 'SSH v2', 'Routage statique']
+  },
+  {
+    icone: '💻',
+    titre: 'MacBook 2010 ressuscité sous Linux',
+    statut: 'valide',
+    lien: 'https://github.com/LinCheb/Macbook-pro-2010-linux-mint',
+    image: 'https://raw.githubusercontent.com/LinCheb/Macbook-pro-2010-linux-mint/main/images/04-linux-mint-xfce.jpg',
+    description: "Un MacBook bloqué sur un macOS sans mises à jour depuis 2020, batterie gonflée, mot de passe oublié → retrait de la batterie, sauvegarde des données, Linux Mint Xfce, pilote Wi-Fi, mises à jour et pare-feu UFW.",
+    enclair: "Un vieux poste n'est pas bon pour la benne : remis sous un système maintenu, il redevient sûr et utilisable. Moins d'achats, moins de déchets.",
+    secu: "Sans le mot de passe, j'ai pu lire tout le disque. Le mot de passe protège l'accès au système, pas les données : seul le chiffrement (FileVault, BitLocker, LUKS) les protège.",
+    tags: ['Linux Mint', 'Boot EFI', 'Sauvegarde', 'UFW', 'Chiffrement']
+  },
+  {
+    icone: '🧱',
+    titre: 'Filtrage inter-VLAN avec des ACL (v2)',
+    statut: 'en-cours',
+    lien: 'https://github.com/LinCheb/Lab-cisco-vlan/tree/main/v2-acl',
+    image: '',
+    description: "Suite du lab VLAN : appliquer le moindre privilège. Le VLAN Client ne joint plus la Gestion IT, seul le VLAN IT administre les équipements en SSH.",
+    enclair: "On ferme les portes entre les étages : chaque service n'accède qu'à ce dont il a besoin.",
+    secu: "",
+    risque: {
+      menace: "En v1, rien ne filtre entre VLAN : un poste du VLAN Client infecté (pièce jointe piégée) peut joindre la Gestion IT et tenter une connexion SSH sur le routeur et le switch.",
+      parade: "Des ACL sur RT1 (moindre privilège) : Client ✕ Gestion IT · SSH réservé au VLAN IT · DNS/DHCP autorisés pour tous.",
+      reste:  "Un poste du VLAN IT compromis garde l'accès. Pistes : journaliser les connexions SSH, protéger fortement les comptes admin."
+    },
+    tags: ['ACL', 'Moindre privilège', 'Cisco']
+  },
+  {
+    icone: '🏢',
+    titre: 'Active Directory de A à Z',
+    statut: 'a-venir',
+    lien: '',
+    image: '',
+    description: "Monter un domaine, créer utilisateurs et groupes, déployer des GPO, gérer DNS et DHCP.",
+    enclair: '',
+    secu: '',
+    tags: ['Windows Server', 'AD DS', 'GPO']
+  },
+  {
+    icone: '⚙️',
+    titre: "Scripts d'administration",
+    statut: 'a-venir',
+    lien: '',
+    image: '',
+    description: "Automatiser la création de comptes et les sauvegardes pour gagner du temps et éviter les erreurs.",
+    enclair: '',
+    secu: '',
+    tags: ['Bash', 'PowerShell']
+  }
+];
+
+const VLAN = 'https://github.com/LinCheb/Lab-cisco-vlan';
+const MAC  = 'https://github.com/LinCheb/Macbook-pro-2010-linux-mint';
+
+/* ---------- 2. JOURNAL (video : lien YouTube quand elle existe) ---------- */
+const JOURNAL = [
+  { date: 'nov. 2026', titre: 'Le port décide du VLAN, pas le PC',
+    texte: "Mes VLAN ne communiquaient pas. Cause : j'avais branché les PC à la suite, sans respecter les plages de ports.",
+    image: "Le VLAN, c'est la prise murale qui le décide, pas la personne qui s'y branche.", video: '', lien: VLAN },
+  { date: 'nov. 2026', titre: "Une config non sauvegardée n'existe pas",
+    texte: "Mes routes de retour ont disparu au redémarrage du routeur. Depuis : copy running-config startup-config, toujours.",
+    image: "Un paquet a besoin d'un aller ET d'un retour, comme un colis avec une adresse d'expéditeur.", video: '', lien: VLAN },
+  { date: 'nov. 2026', titre: 'Un mot de passe ne protège pas un disque',
+    texte: "Mot de passe oublié, et pourtant j'ai tout lu depuis une clé USB Linux. Sans chiffrement, le disque est ouvert.",
+    image: "Une porte blindée sur une maison sans murs : on fait le tour.", video: '', lien: MAC }
+];
+
+/* ---------- 3. RECOMMANDATIONS ----------
+   ⚠️ Uniquement de VRAIES recommandations (LinkedIn), avec l'accord de la personne.
+   Tant que la liste est vide, la section reste invisible. Exemple de format :
+   { texte: "…", auteur: "Prénom N.", role: "RSSI, secteur bancaire" },             */
+const RECOS = [
+];
+
+/* ---------- 4. PROFILS VÉRIFIABLES (bas de page) — vides = non affichés ---------- */
+const PROFILS = [
+  { nom: '🐙 GitHub',      url: 'https://github.com/LinCheb' },
+  { nom: '🏅 Badge Google (Credly)', url: '' },   // colle ici le lien public de ton badge Credly
+  { nom: '🎯 TryHackMe',   url: '' },              // ex. https://tryhackme.com/p/ton-pseudo
+  { nom: '🚩 Root-Me',     url: '' },              // ex. https://www.root-me.org/ton-pseudo
+  { nom: '▶️ YouTube',     url: '' }               // ta chaîne, quand elle est en ligne
+];
+
+/* =====================================================================
+   FABRICATION DE LA PAGE (ne pas modifier)
+   ===================================================================== */
+const esc = t => String(t ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* Labs */
+(function(){
+  const BADGES = { 'valide':['done','validé'], 'en-cours':['wip','en cours'], 'a-venir':['next','prochain lab'] };
+  const grid = document.getElementById('labs-grid');
+  PROJETS.forEach(p => {
+    const [cls, label] = BADGES[p.statut] || BADGES['a-venir'];
+    const clickable = p.lien && p.statut !== 'a-venir';
+    const card = document.createElement(clickable ? 'a' : 'div');
+    card.className = 'lab reveal' + (clickable ? '' : ' locked');
+    if (clickable){ card.href = p.lien; card.target = '_blank'; card.rel = 'noopener'; }
+    card.innerHTML =
+      (p.image ? `<div class="shot"><img src="${esc(p.image)}" alt="Capture : ${esc(p.titre)}" loading="lazy" data-secours="${esc(p.secours||'')}" onerror="if(this.dataset.secours){this.src=this.dataset.secours;this.dataset.secours=''}else{this.parentNode.remove()}"></div>` : '') +
+      `<div class="lab-in">` +
+        `<div class="lab-top"><span class="ico">${p.icone}</span><span class="badge ${cls}">${label}</span></div>` +
+        `<h3>${esc(p.titre)}</h3><p>${esc(p.description)}</p>` +
+        (p.enclair ? `<div class="box dsi"><b>💬 EN CLAIR</b>${esc(p.enclair)}</div>` : '') +
+        (p.secu ? `<div class="box sec"><b>🔐 LEÇON SÉCU</b>${esc(p.secu)}</div>` : '') +
+        (p.risque ? `<div class="box risk-box"><b>⚠️ ANALYSE DE RISQUE</b>` +
+          `<p><span>Menace · </span>${esc(p.risque.menace)}</p>` +
+          `<p><span>Parade · </span>${esc(p.risque.parade)}</p>` +
+          `<p><span>Ce qui reste · </span>${esc(p.risque.reste)}</p></div>` : '') +
+        `<div class="chips">${(p.tags||[]).map(t => `<span class="chip">${esc(t)}</span>`).join('')}</div>` +
+        `<span class="more">${clickable ? 'Voir le projet sur GitHub →' : '⏳ Bientôt en ligne'}</span>` +
+      `</div>`;
+    grid.appendChild(card);
+  });
+})();
+
+/* Journal */
+(function(){
+  const g = document.getElementById('journal-grid');
+  if (!JOURNAL.length){ document.getElementById('journal').hidden = true; return; }
+  g.innerHTML = JOURNAL.map(j =>
+    `<article class="entry reveal"><span class="d">${esc(j.date)}</span><h3>${esc(j.titre)}</h3>` +
+    `<p>${esc(j.texte)}</p>` + (j.image ? `<p class="img">🖼️ ${esc(j.image)}</p>` : '') +
+    (j.video ? `<a href="${esc(j.video)}" target="_blank" rel="noopener">▶ Voir la vidéo</a>`
+             : (j.lien ? `<a href="${esc(j.lien)}" target="_blank" rel="noopener">→ Le lab complet</a>` : '')) +
+    `</article>`).join('');
+})();
+
+/* Recommandations */
+if (RECOS.length){
+  document.getElementById('recos').hidden = false;
+  document.getElementById('quotes').innerHTML = RECOS.map(r =>
+    `<blockquote class="quote reveal"><p>« ${esc(r.texte)} »</p><footer>— ${esc(r.auteur)}, ${esc(r.role)}</footer></blockquote>`).join('');
+}
+
+/* Profils + lien Credly dans la frise */
+(function(){
+  const ok = PROFILS.filter(p => p.url);
+  document.getElementById('profiles').innerHTML = ok.map(p =>
+    `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.nom)}</a>`).join('');
+  const credly = PROFILS.find(p => /credly/i.test(p.nom) && p.url);
+  if (credly) document.getElementById('credly-link').innerHTML =
+    `<a href="${esc(credly.url)}" target="_blank" rel="noopener">✓ Vérifier le badge</a>`;
+})();
+
+/* Terminal qui s'écrit tout seul */
+const lines = [
+  ['p','$ whoami'],
+  ['','Linda Chebli — Admin Systèmes & Réseaux (en formation)'],
+  ['p','$ cat parcours.txt'],
+  ['c','# 7 ans face aux DSI/RSSI → je passe de l\'autre côté'],
+  ['p','$ ls ~/labs'],
+  ['','vlan/  vlan-acl/ (en cours)  macbook-linux/'],
+  ['p','$ grep "leçon" ~/labs/*/README.md | wc -l'],
+  ['ok','chaque lab a sa leçon sécu + son explication en clair'],
+  ['p','$ systemctl status recherche-stage'],
+  ['ok','● active (running) — à partir de mai 2027'],
+];
+const term = document.getElementById('term');
+let li = 0, ci = 0, current = null;
+function type(){
+  if (li >= lines.length){ term.insertAdjacentHTML('beforeend','<span class="cursor"></span>'); return; }
+  const [cls, txt] = lines[li];
+  if (ci === 0){ current = document.createElement('span'); if(cls) current.className = cls; term.appendChild(current); }
+  current.textContent += txt[ci++];
+  if (ci >= txt.length){ term.appendChild(document.createTextNode('\n')); li++; ci = 0; setTimeout(type, cls==='p'?250:450); }
+  else setTimeout(type, cls==='p'?40:12);
+}
+setTimeout(type, 500);
+
+/* Apparition au scroll */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in');
+    e.target.querySelectorAll('.fill').forEach(f => f.style.width = f.dataset.w + '%');
+    io.unobserve(e.target);
+  });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* Bouton flottant */
+const fl = document.getElementById('float');
+addEventListener('scroll', () => {
+  const nearContact = document.getElementById('contact').getBoundingClientRect().top < innerHeight;
+  fl.classList.toggle('show', scrollY > 600 && !nearContact);
+}, {passive:true});
+
+/* Fond animé : nœuds reliés, comme un réseau */
+const cv = document.getElementById('net'), ctx = cv.getContext('2d');
+let nodes = [];
+function size(){
+  cv.width = innerWidth; cv.height = innerHeight;
+  const n = Math.min(60, Math.floor(innerWidth/24));
+  nodes = Array.from({length:n}, () => ({x:Math.random()*cv.width, y:Math.random()*cv.height, vx:(Math.random()-.5)*.3, vy:(Math.random()-.5)*.3}));
+}
+function draw(){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  for (const a of nodes){
+    a.x += a.vx; a.y += a.vy;
+    if (a.x<0||a.x>cv.width) a.vx*=-1;
+    if (a.y<0||a.y>cv.height) a.vy*=-1;
+    ctx.fillStyle = 'rgba(217,194,155,.45)'; ctx.beginPath(); ctx.arc(a.x,a.y,1.6,0,7); ctx.fill();
+  }
+  for (let i=0;i<nodes.length;i++) for (let j=i+1;j<nodes.length;j++){
+    const a=nodes[i], b=nodes[j], d=Math.hypot(a.x-b.x,a.y-b.y);
+    if (d<140){ ctx.strokeStyle=`rgba(217,194,155,${(1-d/140)*.18})`; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke(); }
+  }
+  requestAnimationFrame(draw);
+}
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches){ size(); draw(); addEventListener('resize', size); }
+</script>
+</body>
+</html>
