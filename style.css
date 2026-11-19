@@ -19,10 +19,11 @@ a{color:inherit;text-decoration:none}
 ::selection{background:var(--accent);color:var(--card-text)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 
-/* ✨ MODIFIÉ : plus de photo de serveurs « banque d'images ».
-   Si tu déposes TA photo nommée fond.jpg à côté de index.html, elle s'affiche en fond. Sinon : fond uni. */
-.bg-photo{position:fixed;inset:-4%;z-index:-2;background:url('fond.jpg') center/cover no-repeat;filter:saturate(.75) brightness(.9)}
-.bg-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,27,24,.55) 0%,rgba(29,27,24,.75) 45%,rgba(29,27,24,.92) 100%)}
+/* photo de fond : salle de serveurs (Pexels, licence libre).
+   Pour la remplacer par ta propre photo : dépose-la sous le nom fond-serveurs.jpg à côté de index.html. */
+.bg-photo{position:fixed;inset:-4%;z-index:-2;background:url('fond-serveurs.jpg') center/cover no-repeat,url('https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover no-repeat;filter:saturate(.75) brightness(.9);animation:kenburns 45s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1) translate(0,0)}to{transform:scale(1.08) translate(-1.5%,-1%)}}
+.bg-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,27,24,.45) 0%,rgba(29,27,24,.68) 45%,rgba(29,27,24,.88) 100%)}
 #net{position:fixed;inset:0;z-index:-1;opacity:.6}
 
 nav{position:sticky;top:0;z-index:10;background:rgba(29,27,24,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
